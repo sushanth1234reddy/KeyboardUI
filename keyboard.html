@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard UI</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        button{
+            color: white;
+            background-color: black;
+            box-shadow: 1px 2px white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 1px 1px black;
+        }
+        .main{
+            width: 700px;
+            height: 450px;
+            border: 3px solid black;
+            background-color: rgb(21, 17, 17);
+            border-radius: 10px;
+        }
+        .ro1{
+            display: flex;
+            gap: 3px;
+            justify-content: space-evenly;
+            padding: 5px;
+            
+        }
+        .i{
+            width: 44px;
+        }
+        .ro6{
+            position: relative;
+        }
+        .ro2,.ro3,.ro4,.ro5,.ro6{
+            display: flex;
+            gap: 3px;
+            justify-content: space-evenly;
+            padding: 5px;
+        }
+        .a{
+            width: 44px;
+            height: 40px;
+        }
+        .b{
+             width: 44px;
+            height: 40px;
+        }
+        .c{
+            width: 44px;
+            height: 40px;
+        }
+        .d{
+            width: 44px;
+            height: 40px;
+        }
+        .shift{
+            width: 80px;
+        }
+        .lock{
+            width: 60px;
+        }
+        .enter{
+            width: 70px;
+        }
+        .e{
+            width: 44px;
+            height: 40px ;
+        }
+        .space{
+            width: 255px;
+        }
+        .alt{
+            width: 60px;
+        }
+        .up,.down{
+            width: 40px;
+            height: 20px;
+        }
+        .down{
+            position: absolute;
+            top: 26px;
+            left: 598px;
+        }
+        .mousepad{
+            width: 350px;
+            height: 150px;
+            border: 3px solid white;
+            background-color: rgb(37, 33, 33);
+            border-radius: 4px;
+            margin-left: 170px;
+            margin-top: 7px;
+        }
+        .main{
+            margin-left: 380px;
+            margin-top: 200px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="ro1">
+         <button class="i">esc</button>
+         <button class="i">f1</button>
+         <button class="i">f2</button>
+         <button class="i">f3</button>
+         <button class="i">f4</button>
+         <button class="i">f5</button>
+         
+         <button class="i">f6</button>
+         <button class="i">f7</button>
+         <button class="i">f8</button>
+         <button class="i">f9</button>
+         
+        <button class="i">f10</button>
+        <button class="i">f11</button>
+        <button class="i">f12</button>
+        <button class="i">prtsc</button>
+        <button class="i"><ion-icon name="power-outline"></ion-icon></button>
+        </div>
+        <div class="ro2">
+            <button class="a">~</button>
+            <button class="a">1</button>
+            <button class="a">2</button>
+            <button class="a">3</button>
+            <button class="a">4</button>
+            <button class="a">5</button>
+            <button class="a">6</button>
+            <button class="a">7</button>
+            <button class="a">8</button>
+            <button class="a">9</button>
+            <button class="a">0</button>
+            <button class="a">-</button>
+            <button class="a">=</button>
+            <button class="backspace">backspace</button>
+        </div>
+        <div class="ro3">
+            <button class="b">tab</button>
+            <button class="b">Q</button>
+            <button class="b">W</button>
+            <button class="b">E</button>
+            <button class="b">R</button>
+            <button class="b">T</button>
+            <button class="b">Y</button>
+            <button class="b">U</button>
+            <button class="b">I</button>
+            <button class="b">O</button>
+            <button class="b">P</button>
+            <button class="b">[</button>
+            <button class="b">]</button>
+            <button class="b">\</button>
+
+        </div>
+        <div class="ro4">
+            <button class="lock">lock</button>
+            <button class="c">A</button>
+            <button class="c">S</button>
+            <button class="c">D</button>
+            
+            <button class="c">F</button>
+            <button class="c">G</button>
+            <button class="c">H</button>
+            <button class="c">J</button>
+            <button class="c">K</button>
+            <button class="c">L</button>
+            <button class="c">;</button>
+            <button class="c">'</button>
+            <button class="enter">enter</button>
+
+        </div>
+        <div class="ro5">
+            <button class="shift">shift</button>
+            <button class="d">Z</button>
+            <button class="d">X</button>
+            <button class="d">C</button>
+            <button class="d">V</button>
+            <button class="d">B</button>
+            <button class="d">N</button>
+            <button class="d">M</button>
+            <button class="d">,</button>
+            <button class="d">.</button>
+            <button class="d">/</button>
+            <button class="shift">shift</button>
+           
+        </div>
+        <div class="ro6">
+            <button class="e">ctrl</button>
+            <button class="e">fn</button>
+            <button class="e"><ion-icon name="logo-windows"></ion-icon></button>
+            <button class="space">space</button>
+            <button class="alt">alt</button>
+            <button class="e">ctrl</button>
+            <button class="e">◄</button>
+            <button class="up"><ion-icon name="caret-up-outline"></ion-icon></button>
+            <button class="down"><ion-icon name="caret-down-outline"></ion-icon></button>
+            <button class="e">►</button>
+        </div>
+       <div class="mousepad">
+          
+
+       </div>
+    </div>
+</body>
+</html>
